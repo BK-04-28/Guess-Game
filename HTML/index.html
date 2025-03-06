@@ -5,7 +5,6 @@
 <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 <body>
-
 <div id="game-container">
     <img src="../Image/logo.jpeg" width="8%" height="8%">
   <h1>Guess my Number!</h1>
@@ -24,9 +23,7 @@
     const guess = parseInt(document.getElementById("guess").value);
     attempts++;
 
-    if (isNaN(guess)) {
-      document.getElementById("message").textContent = "Please enter a valid number.";
-    } else if (guess === randomNumber) {
+   if (guess === randomNumber) {
       document.getElementById("message").textContent = `Congratulations! You guessed it in ${attempts} attempts.`;
     } 
     else if (guess >50){
